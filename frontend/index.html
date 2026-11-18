@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentRadar — Radar Mint Gratis untuk Agent ID</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #0b0e11; color: #eaecef; }
+  header { padding: 28px 20px 12px; max-width: 860px; margin: 0 auto; }
+  h1 { margin: 0 0 6px; font-size: 28px; }
+  h1 span { color: #f0b90b; }
+  p.sub { color: #848e9c; margin: 0 0 16px; line-height: 1.5; }
+  main { max-width: 860px; margin: 0 auto; padding: 0 20px 40px; }
+  .card { background: #1e2329; border: 1px solid #2b3139; border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  button { background: #f0b90b; color: #0b0e11; border: 0; border-radius: 8px; padding: 10px 16px; font-weight: 700; cursor: pointer; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.secondary { background: #2b3139; color: #eaecef; }
+  input { background: #0b0e11; color: #eaecef; border: 1px solid #2b3139; border-radius: 8px; padding: 10px 12px; flex: 1; min-width: 200px; }
+  .mono { font-family: ui-monospace, monospace; font-size: 13px; word-break: break-all; }
+  .muted { color: #848e9c; }
+  .ok { color: #0ecb81; } .warn { color: #f0b90b; } .bad { color: #f6465d; }
+  .mint { display: flex; flex-direction: column; gap: 6px; }
+  .mint h3 { margin: 0; } .mint h3 small { color: #848e9c; font-weight: 400; }
+  a { color: #f0b90b; }
+  .pill { display: inline-block; background: #2b3139; border-radius: 999px; padding: 2px 10px; font-size: 12px; }
+  #status { white-space: pre-wrap; line-height: 1.5; }
+  footer { max-width: 860px; margin: 0 auto; padding: 0 20px 32px; color: #848e9c; font-size: 13px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<header>
+  <h1>AgentRadar <span>• Radar Mint Gratis</span></h1>
+  <p class="sub">Radar mint gratis terverifikasi — khusus holder Binance Agent ID (.ai).
+  Check-in on-chain sekali sehari membuktikan Agent ID kamu aktif di radar ini.
+  Radar ini <b>tidak pernah</b> memindahkan asetmu, <b>tidak pernah</b> minta approval,
+  dan <b>tidak pernah</b> minta seed phrase / private key / kode pairing QR.</p>
+</header>
+<main>
+  <section class="card" id="wallet-card">
+    <div class="row">
+      <button id="btn-connect">Connect Wallet</button>
+      <span id="wallet-status" class="muted">Belum terhubung. Pakai MetaMask / Binance Wallet (extension). Jaringan: BNB Smart Chain (56).</span>
+    </div>
+    <div id="agent-box" style="margin-top:12px; display:none">
+      <div>Agent ID: <b id="agent-name">—</b> <span class="pill" id="agent-verified">—</span></div>
+      <div class="mono muted" id="agent-token"></div>
+      <div class="muted">Check-in hari ini: <b id="agent-today">—</b> • Total check-in kamu: <b id="agent-total">—</b></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 style="margin:0 0 8px">Check-in harian (on-chain, gas-only)</h2>
+    <p class="muted" style="margin:0 0 12px">Satu check-in per Agent ID per hari. Transaksi ini yang dihitung hackathon sebagai interaksi Agent ID. Wallet kamu akan menampilkan transaksi untuk di-approve — tidak ada auto-sign.</p>
+    <div class="row">
+      <input id="input-agent" placeholder="nama Agent ID, contoh: rezzrizz atau rezzrizz.ai" autocomplete="off">
+      <button id="btn-checkin">Check-in dengan nama</button>
+      <button id="btn-checkin-self" class="secondary">Check-in otomatis (baca dari registry)</button>
+    </div>
+    <p id="status" class="muted" style="margin:12px 0 0">Status: —</p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin:0 0 4px">Radar — mint gratis terverifikasi</h2>
+    <p class="muted" style="margin:0 0 12px">Status <b>VERIFIED_SIM_ONCHAIN_ONLY</b> = sim read-only lolos (value 0) + bukti on-chain, <b>tanpa</b> halaman resmi terverifikasi dan <b>tanpa</b> floor price terverifikasi. Supply di bawah dibaca live dari chain saat halaman dimuat — angka seed bisa sudah bergerak. Radar tidak pernah mint atas namamu: kalau mau mint, lakukan sendiri di wallet-mu setelah preview bersih.</p>
+    <div id="mint-list"><p class="muted">Memuat daftar…</p></div>
+  </section>
+
+  <section class="card">
+    <h2 style="margin:0 0 8px">Statistik radar (dari kontrak)</h2>
+    <div id="stats" class="muted">Kontrak belum di-deploy — statistik muncul setelah deploy. Lihat <span class="mono">config.js</span>.</div>
+  </section>
+</main>
+<footer>
+  <b>Keamanan.</b> Situs ini statis, tanpa server, tanpa penyimpanan session.
+  Satu-satunya koneksi wallet adalah via <span class="mono">window.ethereum</span> (EIP-1193) di browser kamu sendiri.
+  Jangan pernah ketik seed phrase / private key di situs manapun — termasuk situs ini (tidak ada kolomnya).
+  Pengguna Binance Agentic Wallet berinteraksi lewat aplikasi Binance mereka sendiri; situs ini tidak pernah meminta kode pairing / QR login.<br><br>
+  Kontrak Agent ID registry: <span class="mono">0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F</span> (BSC) — terverifikasi on-chain, lihat <span class="mono">docs/registry-verification.md</span>.<br>
+  Kontrak AgentRadar: <span class="mono" id="footer-contract">TODO-DEPLOY</span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+<script src="./config.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

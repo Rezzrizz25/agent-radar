@@ -1,0 +1,14 @@
+{
+  "description": "AgentRadar \u2014 Agent ID-gated free-mint radar for the Binance Agent ID Hackathon",
+  "devDependencies": {
+    "solc": "^0.8.26"
+  },
+  "license": "MIT",
+  "name": "agent-radar",
+  "private": true,
+  "scripts": {
+    "compile": "solcjs --bin --abi --optimize --optimize-runs 200 -o build contracts/AgentRadar.sol contracts/MockAgentIdRegistry.sol",
+    "compile:json": "solcjs --combined-json abi,bin --optimize --optimize-runs 200 -o build contracts/AgentRadar.sol contracts/MockAgentIdRegistry.sol"
+  },
+  "version": "1.0.0"
+}
