@@ -3,6 +3,13 @@
 > Status: **SUBMITTED 2026-11-18 ~19:13 +08** — "Submitted Successfully"
 > (form https://www.binance.com/en/survey/fb26d2bd25e04329b1ba77c7b3811d23,
 > NO reference number from Binance). Deadline: **9 Des 2026 08:00 UTC**.
+>
+> **First check-in: DONE 2026-11-18 ~20:01 +08** — tx
+> 0xa4df8a7110e2513a35e120451a2f2afdf8288cadbab3d7b03aa9e01395dac479
+> (block 134307854, SUCCESS, gas 192,972 ≈ 0.000016 BNB).
+> totalCheckIns = 1, uniqueAgents = 1 (rezzrizz.ai). Done via baw
+> `checkInSelf()` — the Agentic Wallet screen has no browser menu, so
+> in-app check-in is not possible; baw is the working route.
 > Announcement: "Agent ID Hackathon: Build Decentralized Applications (dApps)
 > Around Agent ID to Win 60,000 USDC Worth of Rewards" (Binance Announcement,
 > dipublikasikan 2026-11-18 15:50).
