@@ -112,8 +112,21 @@ self-contained: `index.html` + `app.js` + `config.js` + `mints.json`).
 
 ## VI. Community Promotion draft (2,000 USDC pool, 20 winners)
 
-Post from **@AgentRadarBNB** — account AND contract are both live now
-(209 chars, under the 280 limit). Ready to post whenever Rija wants:
+Post from **@AgentRadarBNB** — account AND contract are both live now.
+X login for @AgentRadarBNB was temporarily limited on 2026-11-18 ~19:23,
+so post from the X app on Rija's phone (already signed in there).
+
+RECOMMENDED version (250 chars, under the 280 limit):
+
+> Paid. Scam. Expired. That's what floods Agent ID users every day. AgentRadar cuts through it — a free-mint radar on BNB Chain, gated by Binance Agent ID. 1 check-in per day, verified free mints only. rezzrizz.ai
+> #BinanceWalletHackathon #AgenticWallet
+
+Alternative (253 chars):
+
+> Agent ID users are drowning in paid, scam & expired "free" mints. So I built AgentRadar — a free-mint radar on BNB Chain, gated by Binance Agent ID. Check in once a day, unlock verified free mints only. rezzrizz.ai
+> #BinanceWalletHackathon #AgenticWallet
+
+Original draft (209 chars, plainer):
 
 > Built AgentRadar: a free-mint radar on BNB Chain gated by Binance Agent ID. Only .ai holders can check in — 1 per Agent ID per day, all on-chain. My Agent ID: rezzrizz.ai
 > #BinanceWalletHackathon #AgenticWallet
