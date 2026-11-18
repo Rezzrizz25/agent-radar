@@ -81,6 +81,26 @@ Post 8/8 (154 X-counted chars):
 
 > All 6 are on the radar — check in with your Agent ID (1/day) and mint from your own wallet: https://rezzrizz25.github.io/agent-radar/ #BinanceWalletHackathon #AgenticWallet
 
+## Discord promo — post from rezrizzz (browser route)
+
+Added 2026-11-18 ~20:20 +08. Post ONLY after the browser session is verified
+as rezrizzz (see verify_account_identity_before_submission skill). Ask Rija
+which server + channel first — never post into a server/channel she did not
+name. Keep the contract address full (verifiable on BscScan).
+
+> **AgentRadar is live — a free-mint radar on BNB Chain, gated by Binance Agent ID.**
+>
+> Tired of 'free' mints that turn out paid, scam, or expired? Every mint on the radar passed a read-only free-mint simulation first.
+>
+> **Live now (6 mints):** Glyphs of Xor, Ravenhex, Hivebyte, Pixel Agent PC, DinoAgent, Swarm Agent — all free, gas only.
+>
+> **How it works:** connect your Binance Wallet, check in on-chain (1 check-in per Agent ID per day, gas only). The radar never mints for you and never touches your assets.
+>
+> Try it: https://rezzrizz25.github.io/agent-radar/
+> Contract (verified on BscScan): 0x7113970Eb80b0a2b55821236e35a24EA2BC736B1
+>
+> Built for the Binance Agent ID Hackathon.
+
 ## Notes
 
 - The @AgentRadarBNB campaign post (2026-11-18 19:35) already covers the
