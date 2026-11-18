@@ -39,6 +39,48 @@ Attach the banner image (assets/agent-radar-promo.png) to post 1/4.
 >
 > Follow @AgentRadarBNB on X for new mint drops. #BinanceWalletHackathon #AgenticWallet
 
+## X thread — all 6 free mints, post from @AgentRadarBNB
+
+Added 2026-11-18 ~20:10 +08 (after DINO + SWARM joined the radar, mintCount 6).
+All posts verified under 280 chars. Each mint post carries its full contract
+address so anyone can verify it on BscScan. Gas figures are the sim
+estimates at 0.05 gwei from mints.json. Do NOT add "1 free per wallet" or
+"Agent ID-gated" claims for the mints themselves — only the radar check-in
+is Agent ID-gated; the mints are verified free (value-0 sim + observed
+value-0 mints) only.
+
+Post 1/8 (102 chars):
+
+> 6 verified free mints are live on AgentRadar right now — all sim-verified, gas only. Here is each one:
+
+Post 2/8 (112 chars):
+
+> Glyphs of Xor (XOR) — free mint, gas only (~0.0000055 BNB). Contract: 0x1577cbaaa3097c16d8aa93639cd00430e14ab90c
+
+Post 3/8 (110 chars):
+
+> Ravenhex (RAVENH) — free mint, gas only (~0.0000069 BNB). Contract: 0xb44050254a25daa8077c14bbb20d0a595e6cece2
+
+Post 4/8 (130 chars):
+
+> Hivebyte (HIVEBYTE) — free mint, gas only (~0.0000069 BNB), max supply 2,000. Contract: 0xae9d85e78a609f185b4682d87da12d13b03cf8d8
+
+Post 5/8 (132 chars):
+
+> Pixel Agent PC (PXPC) — free mint, gas only (~0.0000115 BNB), max supply 5,000. Contract: 0x6a6601f2d1b8b4cca97ce8800df5e8f4fe1910c8
+
+Post 6/8 (109 chars):
+
+> DinoAgent (DINO) — free mint, gas only (~0.0000081 BNB). Contract: 0x7df7fd03bd5b7a024b1341849aad14758f12a4a8
+
+Post 7/8 (112 chars):
+
+> Swarm Agent (SWARM) — free mint, gas only (~0.0000049 BNB). Contract: 0xd612ded8f2b4818c0a9d2465f06ebf1b745f0e17
+
+Post 8/8 (154 X-counted chars):
+
+> All 6 are on the radar — check in with your Agent ID (1/day) and mint from your own wallet: https://rezzrizz25.github.io/agent-radar/ #BinanceWalletHackathon #AgenticWallet
+
 ## Notes
 
 - The @AgentRadarBNB campaign post (2026-11-18 19:35) already covers the
