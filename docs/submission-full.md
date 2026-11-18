@@ -130,6 +130,16 @@ Attach the banner image: assets/agent-radar-promo.png (PNG of the clean
 banner). Then delete the old post and submit the new post link via the
 official campaign survey.
 
+STATUS 2026-11-18 ~19:43 +08: Rija reposted the corrected version herself
+(https://x.com/AgentRadarBNB/status/2123017348252852700, radar link + banner)
+and submitted the campaign survey HERSELF from her phone with the correct
+UID 1043310502 — "Submitted Successfully". NOTE: an earlier browser
+submission ~19:40 used the WRONG UID 1250741538 (from the browser session's
+dashboard, account "User-f581f") and could not be corrected — the survey
+allows one submission per session and resubmission was blocked
+("Survey already completed"). Two entries now exist; the correct one is
+Rija's phone submission.
+
 Alternative (253 chars):
 
 > Agent ID users are drowning in paid, scam & expired "free" mints. So I built AgentRadar — a free-mint radar on BNB Chain, gated by Binance Agent ID. Check in once a day, unlock verified free mints only. rezzrizz.ai
