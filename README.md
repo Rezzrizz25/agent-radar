@@ -156,11 +156,12 @@ python3 -m http.server --directory frontend 8000
 - **Testnet dulu.** BSC testnet tidak punya registry Agent ID (belum terverifikasi
   ada) — deploy pakai `MockAgentIdRegistry.sol`, register handle `rezzrizz`
   untuk wallet test, baru uji check-in. Lihat `docs/deploy.md`.
-- **Alamat kontrak mainnet: TODO-DEPLOY.** Jangan isi `config.js` dengan alamat
-  dari chat/tebakan — hanya dari receipt deploy yang diverifikasi di BscScan.
-- **Repo GitHub belum dibuat.** Push repo ini ke `github.com/Rezzrizz25/…`
-  (nama repo bebas, mis. `agent-radar`) sebelum submit — form hackathon minta
-  link repo open-source + kontrak terverifikasi BscScan.
+- **Alamat kontrak mainnet: `0x7113970Eb80b0a2b55821236e35a24EA2BC736B1`** —
+  LIVE 2026-11-18 ~17:54 +08, source VERIFIED di BscScan ~18:18 +08.
+  Link: https://bscscan.com/address/0x7113970Eb80b0a2b55821236e35a24EA2BC736B1#code
+- **Repo GitHub belum dibuat.** Push repo ini ke `github.com/Rezzrizz25/agent-radar`
+  (public, MIT) sebelum submit — form hackathon minta link repo open-source +
+  kontrak terverifikasi BscScan. Website: https://rezzrizz25.github.io/agent-radar/
 - **Pioneer butuh promosi.** Setelah live, Rija perlu mempromosikan radar ke
   holder Agent ID lain (X, Telegram) — metrik hanya dihitung 18 Nov–9 Des 2026.
 

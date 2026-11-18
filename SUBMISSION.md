@@ -12,13 +12,13 @@
 |---|---|
 | Project name | **AgentRadar** |
 | Tagline | Radar mint NFT gratis di BNB Chain, khusus holder Binance Agent ID (.ai) — dengan check-in harian on-chain per Agent ID. |
-| Website / live dApp | TODO-HOSTING — isi URL hosting statis frontend setelah deploy (mis. GitHub Pages). |
-| Contract address(es) | TODO-DEPLOY — alamat AgentRadar mainnet setelah deploy + verifikasi BscScan. JANGAN isi dari tebakan. |
+| Website / live dApp | **https://rezzrizz25.github.io/agent-radar/** — GitHub Pages, aktif setelah repo dibuat + Pages di-enable (langkah terakhir sebelum submit). |
+| Contract address(es) | **https://bscscan.com/address/0x7113970Eb80b0a2b55821236e35a24EA2BC736B1#code** — LIVE 2026-11-18 ~17:54 +08, source **VERIFIED 2026-11-18 ~18:18 +08** via Etherscan API V2 (solc 0.8.38, optimizer 200, EVM osaka, MIT). |
 | Agent ID registry | `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F` (BNB Chain, SPACE ID / Binance Agent ID) — bukti: `docs/registry-verification.md` |
-| GitHub repo (open source) | TODO-GITHUB — push repo ini ke `github.com/Rezzrizz25/agent-radar` (atau nama lain), public, lisensi MIT. |
+| GitHub repo (open source) | **https://github.com/Rezzrizz25/agent-radar** — public, lisensi MIT. Rija yang buat repo kosongnya; push dari lokal setelah repo ada. |
 | Nama project | **AgentRadar** — dengan pembeda BNB di X (`@AgentRadarBNB`) karena nama "AgentRadar" polos sudah dipakai proyek lain: trust oracle on-chain untuk agent economy di Base (vvpro.ai, ERC-8004, EAS attestations, live Base Sepolia/Mainnet — terverifikasi via web search 2026-11-18). Proyek itu BUKAN kami, tidak ada hubungan. |
 | Agent ID usage description | Agent ID adalah gerbang dan identitas radar: (1) `checkIn`/`checkInSelf` memverifikasi `registry.handleOf(msg.sender)` → `keccak256(handle)` → `registry.ownerOf(tokenId) == msg.sender` di setiap check-in; tanpa Agent ID transaksi revert. (2) Satu check-in per Agent ID per hari UTC — identitas, bukan alamat anonim, yang dihitung. (3) `uniqueAgents` + event `CheckedIn` memberi metrik Pioneer Award yang bisa diaudit siapa saja. (4) Kurasi radar berasal dari pipeline scan 4.942 wallet JAGENT early-minter Rija; entri hanya masuk setelah sim read-only lolos. |
-| Project X | **[@AgentRadarBNB](https://x.com/AgentRadarBNB)** — display name "AgentRadar BNB". ⚠️ **PENDING: akun ini BELUM dibuat.** Rija yang membuat akunnya sendiri di X; JANGAN klaim link ini sudah live sampai dia konfirmasi. Bio yang dipakai saat membuat akun: "Agent ID-gated free-mint radar on BNB Chain. Verified free mints only. Built for Binance Agent ID Hackathon." |
+| Project X | **[@AgentRadarBNB](https://x.com/AgentRadarBNB)** — display name "AgentRadar BNB". ✅ **LIVE — dibuat Rija, terverifikasi 2026-11-18 ~17:03 +08** (joined Nov 2026, foto profil + banner terpasang ~17:06 +08). Bio: "Agent ID-gated free-mint radar on BNB Chain. Verified free mints only. Built for Binance Agent ID Hackathon." |
 | Team | Rija (Agent ID: `rezzrizz.ai`) — solo. |
 | Contact / owner X | X pemilik (fallback): [@rezzrizz25](https://x.com/rezzrizz25) |
 

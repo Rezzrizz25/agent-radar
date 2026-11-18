@@ -1,6 +1,7 @@
-node_modules/
-build/
 out/
 cache/
-.DS_Store
-*.log
+broadcast/
+lib/
+node_modules/
+build/
+*.bak

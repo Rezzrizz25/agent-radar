@@ -1,8 +1,11 @@
 # Full Submission Draft — AgentRadar (Binance Agent ID Hackathon)
 
 > Status: **DRAFT — BELUM SUBMIT.** Deadline: **9 Des 2026 08:00 UTC**.
-> Jangan submit sebelum kontrak mainnet live + terverifikasi BscScan dan
-> website live. Field bertanda TODO adalah blocker — bukan nilai untuk diisi.
+> UPDATE 2026-11-18 ~17:56 +08: kontrak SUDAH LIVE + 4 mint ter-seed.
+> UPDATE 2026-11-18 ~18:18 +08: BscScan source **VERIFIED** ("Pass - Verified"
+> via Etherscan API V2, guid sy6j9vaj8iqied5j7v369n4mrapiqh89q1yb2uqkszpgctshwa).
+> Jangan submit sebelum website live. Field bertanda TODO adalah blocker —
+> bukan nilai untuk diisi.
 
 ## I. Basic Project Information (sesuai form Binance)
 
@@ -16,23 +19,30 @@ per day — to unlock a curated list of verified free NFT mints, filtering out
 paid, scam, and expired mints that flood Agent ID users.
 
 ### 3. Project Contract Address(es)
-**TODO-DEPLOY** — isi link BscScan setelah deploy mainnet + verifikasi:
-`https://bscscan.com/address/<CONTRACT_ADDRESS>#code`
-JANGAN isi dari tebakan. Kontrak: `AgentRadar`, Solidity 0.8.38, optimizer
-200 runs, MIT, single file (`contracts/AgentRadar.sol`).
+**LIVE — deployed 2026-11-18 ~17:54 +08** via Arachnid CREATE2 factory
+(`0x4e59b44847b379578588920cA78FbF26c0B4956C`, salt `keccak256("AgentRadar-v1")`):
+`https://bscscan.com/address/0x7113970Eb80b0a2b55821236e35a24EA2BC736B1#code`
+Deploy tx: `0xd28685f35440c162ff2dafc22f869f9aa21570927edb124018e76b6988a48f87`
+(status 0x1, gas 2,115,130). Verified on-chain: owner = Rija's wallet,
+`mintCount()` = 4 (seeded 17:56 +08). Kontrak: `AgentRadar`, Solidity 0.8.38,
+optimizer 200 runs, MIT, single file (`contracts/AgentRadar.sol`).
+BscScan source verification: **VERIFIED 2026-11-18 ~18:18 +08** — "Pass -
+Verified" via Etherscan API V2 (guid
+sy6j9vaj8iqied5j7v369n4mrapiqh89q1yb2uqkszpgctshwa), dikonfirmasi ulang lewat
+`getsourcecode` (source lengkap, EVM osaka).
 Registry yang dipakai kontrak (bukan kontrak project):
 `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F` (SPACE ID / Binance Agent ID).
 
 ### 4. Project Website / Product Access Link
-**TODO-HOSTING** — isi URL setelah frontend di-host (rencana: GitHub Pages
-dari repo public, `https://rezzrizz25.github.io/agent-radar/` — pastikan
-nama repo final sebelum menulis URL ini ke form).
+**https://rezzrizz25.github.io/agent-radar/** — GitHub Pages dari repo
+public `Rezzrizz25/agent-radar`, folder `/frontend`. Aktif setelah repo
+dibuat + Pages di-enable; cek live sebelum submit.
 
 ### 5. Project Social Media Link (X)
 **Project: https://x.com/AgentRadarBNB** — handle **@AgentRadarBNB**,
 display name "AgentRadar BNB".
-⚠️ **PENDING — akun belum dibuat.** Rija membuat akunnya sendiri di X;
-link ini belum live sampai dia konfirmasi.
+✅ **LIVE — dibuat Rija, terverifikasi 2026-11-18 ~17:03 +08** (joined Nov
+2026). Logo + banner terpasang ~17:06 +08 (file di `assets/`).
 Bio saat membuat akun: "Agent ID-gated free-mint radar on BNB Chain.
 Verified free mints only. Built for Binance Agent ID Hackathon."
 **Owner (fallback): https://x.com/rezzrizz25** — akun personal Rija
@@ -61,7 +71,7 @@ Agent ID is the gate and the identity of the radar, not a label:
 
 - Team: Rija — solo. Agent ID: `rezzrizz.ai`
   (wallet `0x7917A535D0Cb92dC3c16c8d3bcFC4E0F2bDBB91A`).
-- Project X: https://x.com/AgentRadarBNB (pending creation — see §I.5).
+- Project X: https://x.com/AgentRadarBNB (LIVE since 2026-11-18 ~17:03 +08, see §I.5).
 - Owner X: https://x.com/rezzrizz25.
 - GitHub repo: **TODO-GITHUB** — `github.com/Rezzrizz25/agent-radar`
   (public, MIT). Repo belum di-push: tidak ada remote, `gh` belum login —
@@ -81,18 +91,18 @@ form asks for the project name, not the X handle).
 
 | # | Blocker | Status | Who |
 |---|---|---|---|
-| 1 | Top-up BNB to ~0.003 (now 0.0015568; deploy+seed ≈ 0.000163, remainder ≈ 0.00139 < 0.0015 floor) | Recommended, not hard-blocking | Rija |
-| 2 | Deploy `AgentRadar` mainnet (Remix pack: `docs/remix-deploy.md`) | Not done | Rija (tap approve di wallet) |
-| 3 | Verify source on BscScan | Not done | Rija (follows deploy) |
-| 4 | Seed 4 mints via `addMint` (supplies live 309/655/319/833 re-checked ~17:00 +08) | Not done | Rija (owner wallet) |
-| 5 | Fill `frontend/config.js`, host frontend (GitHub Pages) | Not done | Needs repo (blocker 6) |
-| 6 | Create GitHub repo `Rezzrizz25/agent-radar` (public) + push + enable Pages | **Not done — needs Rija in browser.** `gh` CLI not logged in, no remote configured. Local repo is commit-ready (see below). | Rija |
-| 7 | **Create X account @AgentRadarBNB** (display "AgentRadar BNB", bio §I.5) | **Not done — Rija creates it herself** | Rija |
+| 1 | Top-up BNB to ~0.003 | ✅ DONE — two top-ups landed; BNB 0.0056856 after deploy+seed, above floor | Rija |
+| 2 | Deploy `AgentRadar` mainnet (factory path: `docs/factory-deploy.md`; Remix abandoned — copy-paste stuck) | ✅ DONE 17:54 +08 — `0x7113970Eb80b0a2b55821236e35a24EA2BC736B1`, tx `0xd28685f3…48f87` | Rija (tapped execute) |
+| 3 | Verify source on BscScan (solc 0.8.38, optimizer Yes 200 runs) | ⏳ IN PROGRESS (main agent) | Agent |
+| 4 | Seed 4 mints via `addMint` (XOR 309, RAVENH 655, HIVEBYTE 319, PXPC 833) | ✅ DONE 17:56 +08 — 4/4 success, mintCount = 4, ~0.0000662 BNB total | Rija (tapped execute) |
+| 5 | Fill `frontend/config.js`, host frontend (GitHub Pages) | `config.js` ✅ DONE (live contract address set 18:01 +08); hosting still blocked on repo (blocker 6) | Needs repo (blocker 6) |
+| 6 | Create GitHub repo `Rezzrizz25/agent-radar` (public) + push + enable Pages | **Not done — needs Rija in browser.** `gh` CLI not logged in, no remote configured. Local commit `196da21` ready (see below). | Rija |
+| 7 | **Create X account @AgentRadarBNB** (display "AgentRadar BNB", bio §I.5) | ✅ DONE — live since ~17:03 +08, logo + banner installed ~17:06 | Rija |
 | 8 | Submit the Binance form with §§I–II | Blocked on 2–7 | Rija / agent with live links |
 
-Local repo state (2026-11-18 ~17:05 +08): `git init` done, no commits yet
-before this session; commit with all source + docs prepared by the
-finish-everything run. Push commands once the remote exists:
+Local repo state (2026-11-18 ~18:01 +08): local commit `196da21` exists
+(all source + docs); contract address in `frontend/config.js` now points at
+the live contract. Push commands once the remote exists:
 `git remote add origin https://github.com/Rezzrizz25/agent-radar.git`
 then `git push -u origin master`. Enable Pages: repo Settings → Pages →
 Source: Deploy from branch, branch `master`, folder `/frontend` (or root
@@ -101,8 +111,8 @@ self-contained: `index.html` + `app.js` + `config.js` + `mints.json`).
 
 ## VI. Community Promotion draft (2,000 USDC pool, 20 winners)
 
-Post from **@AgentRadarBNB** once the account exists AND the contract is
-live (209 chars, under the 280 limit):
+Post from **@AgentRadarBNB** — account AND contract are both live now
+(209 chars, under the 280 limit). Ready to post whenever Rija wants:
 
 > Built AgentRadar: a free-mint radar on BNB Chain gated by Binance Agent ID. Only .ai holders can check in — 1 per Agent ID per day, all on-chain. My Agent ID: rezzrizz.ai
 > #BinanceWalletHackathon #AgenticWallet
