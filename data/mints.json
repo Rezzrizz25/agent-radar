@@ -1417,6 +1417,28 @@
    "supplyLiveRecheck": 0,
    "supplyLiveRecheckAt": "2026-11-19T02:46:06+08:00",
    "symbol": "AGPIONEER"
+  },
+  {
+   "bscscan": "https://bscscan.com/address/0xd3c7bd6cb1fb1025c4d17e3c51b1b531efbd6544",
+   "chainId": 56,
+   "contract": "0xd3c7bd6cb1fb1025c4d17e3c51b1b531efbd6544",
+   "deadline": null,
+   "evidence": "Read-only mint replay sim from Rija's wallet, value 0, SUCCEEDS (eth_call OK, estimateGas 218508). First-seen mint tx value 0 BNB. balanceOf(Rija)=0. No official mint page found - verification is on-chain + sim only.",
+   "firstSeen": "2026-11-19 ~03:36 +08, hourly JAGENT wallet scan (4,942 tracked wallets)",
+   "floorPrice": null,
+   "gasEstimateBNB": 1.09254e-05,
+   "gasEstimateUnits": 218508,
+   "gasNote": "At 0.05 gwei live gas price.",
+   "id": 68,
+   "maxSupply": null,
+   "name": "Agent Gold Miner",
+   "officialPage": null,
+   "source": "JAGENT scan 2026-11-19 03:36 +08",
+   "status": "VERIFIED_SIM_ONCHAIN_ONLY",
+   "supplyAtSeed": 1787,
+   "supplyLiveRecheck": 1787,
+   "supplyLiveRecheckAt": "2026-11-19T03:44:20+08:00",
+   "symbol": "AGM-CARD"
   }
  ],
  "note": "Seed list for AgentRadar. Every entry is evidence-graded, NOT an endorsement. 'VERIFIED_SIM_ONCHAIN_ONLY' means: first-seen tx value was 0 BNB + a read-only mint() replay simulation from Rija's wallet succeeded at value 0 + totalSupply re-read live. NO entry has a verified official project page and NONE has a verified floor price. Do NOT present any entry as official-page-verified. The radar never mints on a user's behalf \u2014 a user mints only in their own wallet, after a fresh preview, at their own risk. Supplies below were re-read live via eth_call totalSupply() on 2026-11-18 ~16:45 +08 and moved since the original scan notes \u2014 re-check before any mint.",
@@ -1424,6 +1446,6 @@
   "LEAD": "Seen in scan logs / unverified. Do NOT list as verified; needs a fresh read-only sim + balanceOf check before promotion.",
   "VERIFIED_SIM_ONCHAIN_ONLY": "Read-only sim passed (value 0), on-chain evidence only, no official page found."
  },
- "updated": "2026-11-19T02:46:06+08:00",
+ "updated": "2026-11-19T03:44:20+08:00",
  "version": 2
 }
