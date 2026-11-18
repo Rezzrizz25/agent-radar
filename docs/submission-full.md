@@ -116,10 +116,19 @@ Post from **@AgentRadarBNB** — account AND contract are both live now.
 X login for @AgentRadarBNB was temporarily limited on 2026-11-18 ~19:23,
 so post from the X app on Rija's phone (already signed in there).
 
-RECOMMENDED version (250 chars, under the 280 limit):
+RECOMMENDED version (263 X-counted chars, under the 280 limit).
+NOTE 2026-11-18 ~19:28: the first posted version ended with bare
+"rezzrizz.ai" — X auto-linked it, but rezzrizz.ai is an Agent ID name,
+NOT a website (ERR_NAME_NOT_RESOLVED), so the link was dead. Fixed
+version links the live radar site instead (drives check-ins):
 
-> Paid. Scam. Expired. That's what floods Agent ID users every day. AgentRadar cuts through it — a free-mint radar on BNB Chain, gated by Binance Agent ID. 1 check-in per day, verified free mints only. rezzrizz.ai
+> Paid. Scam. Expired. That's what floods Agent ID users every day. AgentRadar cuts through it — a free-mint radar on BNB Chain, gated by Binance Agent ID. 1 check-in per day, verified free mints only.
+> https://rezzrizz25.github.io/agent-radar/
 > #BinanceWalletHackathon #AgenticWallet
+
+Attach the banner image: assets/agent-radar-promo.png (PNG of the clean
+banner). Then delete the old post and submit the new post link via the
+official campaign survey.
 
 Alternative (253 chars):
 
