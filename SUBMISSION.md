@@ -1,7 +1,8 @@
 # SUBMISSION — Binance Agent ID Hackathon
 
-> Status: **DRAFT — BELUM SUBMIT.** Jangan submit sebelum semua kotak
-> "WAJIB sebelum submit" di bawah dicentang. Deadline: **9 Des 2026 08:00 UTC**.
+> Status: **SUBMITTED 2026-11-18 ~19:13 +08** — "Submitted Successfully"
+> (form https://www.binance.com/en/survey/fb26d2bd25e04329b1ba77c7b3811d23,
+> NO reference number from Binance). Deadline: **9 Des 2026 08:00 UTC**.
 > Announcement: "Agent ID Hackathon: Build Decentralized Applications (dApps)
 > Around Agent ID to Win 60,000 USDC Worth of Rewards" (Binance Announcement,
 > dipublikasikan 2026-11-18 15:50).

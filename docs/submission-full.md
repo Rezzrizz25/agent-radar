@@ -1,6 +1,7 @@
 # Full Submission Draft — AgentRadar (Binance Agent ID Hackathon)
 
-> Status: **DRAFT — BELUM SUBMIT.** Deadline: **9 Des 2026 08:00 UTC**.
+> Status: **SUBMITTED 2026-11-18 ~19:13 +08** ("Submitted Successfully", no
+> reference number). Deadline: **9 Des 2026 08:00 UTC**.
 > UPDATE 2026-11-18 ~17:56 +08: kontrak SUDAH LIVE + 4 mint ter-seed.
 > UPDATE 2026-11-18 ~18:18 +08: BscScan source **VERIFIED** ("Pass - Verified"
 > via Etherscan API V2, guid sy6j9vaj8iqied5j7v369n4mrapiqh89q1yb2uqkszpgctshwa).
