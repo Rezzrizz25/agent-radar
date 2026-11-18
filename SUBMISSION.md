@@ -37,7 +37,7 @@
 - [ ] Selama Submission Period (sampai 9 Des 08:00 UTC): ajak holder Agent ID check-in (X, Telegram deal-hunt, komunitas). Hanya interaksi dalam periode ini yang dihitung.
 
 ### Opsional (menaikkan skor)
-- [ ] Video demo singkat (Remotion/Motion Canvas — code-based, bukan AI video) untuk form/X.
+- [x] Video demo singkat (Remotion — code-based, bukan AI video) untuk form Q12/X — **DONE 2026-11-18 ~19:05 +08: 60 detik, 1280x720, 1,1 MB, `frontend/demo.mp4`, live di https://rezzrizz25.github.io/agent-radar/demo.mp4** (title + problem + 3 langkah check-in + 4 mint seed + bukti live). Source: `~/workspace/remotion-random-video/src/AgentRadarDemo.tsx`, render `out/agent-radar-demo.mp4`.
 - [ ] Tambah entri radar baru dari scan jam-an (hanya yang lolos sim + preview).
 - [ ] Community Promotion 2.000 USDC: posting X terpisah (lihat §3).
 
