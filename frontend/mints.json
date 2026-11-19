@@ -3023,6 +3023,28 @@
    "supplyLiveRecheck": 634,
    "supplyLiveRecheckAt": "2026-11-19T17:55:48+08:00",
    "symbol": "LNFT"
+  },
+  {
+   "bscscan": "https://bscscan.com/address/0x75224072bfbca212662243b2f068cb8b9a38d412",
+   "chainId": 56,
+   "contract": "0x75224072bfbca212662243b2f068cb8b9a38d412",
+   "deadline": null,
+   "evidence": "Read-only mint replay sim from Rija's wallet, value 0, SUCCEEDS (eth_call OK, estimateGas 110858). First-seen mint tx value 0 BNB. balanceOf(Rija)=0. No official mint page found - verification is on-chain + sim only.",
+   "firstSeen": "2026-11-20 ~01:36 +08, hourly JAGENT wallet scan (4,942 tracked wallets)",
+   "floorPrice": null,
+   "gasEstimateBNB": 5.5429e-06,
+   "gasEstimateUnits": 110858,
+   "gasNote": "At 0.05 gwei live gas price.",
+   "id": 141,
+   "maxSupply": null,
+   "name": "Cipher Runner",
+   "officialPage": null,
+   "source": "JAGENT scan 2026-11-20 01:36 +08",
+   "status": "VERIFIED_SIM_ONCHAIN_ONLY",
+   "supplyAtSeed": 171,
+   "supplyLiveRecheck": 171,
+   "supplyLiveRecheckAt": "2026-11-20T01:45:36+08:00",
+   "symbol": "CY18"
   }
  ],
  "note": "Seed list for AgentRadar. Every entry is evidence-graded, NOT an endorsement. 'VERIFIED_SIM_ONCHAIN_ONLY' means: first-seen tx value was 0 BNB + a read-only mint() replay simulation from Rija's wallet succeeded at value 0 + totalSupply re-read live. NO entry has a verified official project page and NONE has a verified floor price. Do NOT present any entry as official-page-verified. The radar never mints on a user's behalf \u2014 a user mints only in their own wallet, after a fresh preview, at their own risk. Supplies below were re-read live via eth_call totalSupply() on 2026-11-18 ~16:45 +08 and moved since the original scan notes \u2014 re-check before any mint.",
@@ -3030,6 +3052,6 @@
   "LEAD": "Seen in scan logs / unverified. Do NOT list as verified; needs a fresh read-only sim + balanceOf check before promotion.",
   "VERIFIED_SIM_ONCHAIN_ONLY": "Read-only sim passed (value 0), on-chain evidence only, no official page found."
  },
- "updated": "2026-11-19T17:55:48+08:00",
+ "updated": "2026-11-20T01:45:36+08:00",
  "version": 2
 }
