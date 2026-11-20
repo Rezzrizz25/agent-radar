@@ -63,6 +63,15 @@
   </section>
 
   <section class="card">
+    <h2 style="margin:0 0 8px">Cara check-in — dua jalur</h2>
+    <p class="muted" style="margin:0 0 12px">Check-in membuktikan kamu pemilik Agent ID — kontrak membaca handle kamu dari registry on-chain. Satu check-in per Agent ID per hari (UTC). Gas-only, sekitar 0,000016 BNB.</p>
+    <p style="margin:0 0 8px">1. Tombol di atas (browser wallet). Connect wallet yang memegang Agent ID kamu, lalu klik "Check-in otomatis" dan approve di wallet. Kalau situs bilang wallet ini belum punya Agent ID, berarti Agent ID kamu ada di alamat Binance Agentic Wallet kamu — pakai jalur 2.</p>
+    <p style="margin:0 0 8px">2. Binance Agentic Wallet / baw (jalur yang sudah terbukti). Dari CLI baw yang sudah ter-pair dengan Binance App kamu, preview dulu:</p>
+    <p class="mono" style="margin:0 0 8px">baw contract-call preview --binanceChainId 56 --from &lt;alamat Agentic Wallet kamu&gt; --to 0x7113970Eb80b0a2b55821236e35a24EA2BC736B1 --value 0 --inputData 0xa2ceaac4 --json</p>
+    <p style="margin:0">Cek preview-nya bersih (simulationCode 000000000, tanpa risiko / perubahan saldo / otoritas), lalu execute dengan requestId yang dikembalikan: baw contract-call execute. Preview kedaluwarsa dalam hitungan menit — kalau expired, preview ulang lalu langsung execute. Situs ini dan baw tidak pernah meminta seed phrase, private key, atau kode pairing.</p>
+  </section>
+
+  <section class="card">
     <h2 style="margin:0 0 4px">Radar — mint gratis terverifikasi</h2>
     <p class="muted" style="margin:0 0 12px">Status <b>VERIFIED_SIM_ONCHAIN_ONLY</b> = sim read-only lolos (value 0) + bukti on-chain, <b>tanpa</b> halaman resmi terverifikasi dan <b>tanpa</b> floor price terverifikasi. Supply di bawah dibaca live dari chain saat halaman dimuat — angka seed bisa sudah bergerak. Radar tidak pernah mint atas namamu: kalau mau mint, lakukan sendiri di wallet-mu setelah preview bersih.</p>
     <div id="mint-list"><p class="muted">Memuat daftar…</p></div>
