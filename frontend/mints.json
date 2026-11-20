@@ -4189,6 +4189,28 @@
    "supplyLiveRecheck": 76,
    "supplyLiveRecheckAt": "2026-11-20T09:47:56+08:00",
    "symbol": "PAOC"
+  },
+  {
+   "bscscan": "https://bscscan.com/address/0x679d4f5bbc579053a691a44cbaa01c2999df1b5b",
+   "chainId": 56,
+   "contract": "0x679d4f5bbc579053a691a44cbaa01c2999df1b5b",
+   "deadline": null,
+   "evidence": "Read-only mint replay sim from Rija's wallet, value 0, SUCCEEDS (eth_call OK, estimateGas 81675). First-seen mint tx value 0 BNB. balanceOf(Rija)=0. No official mint page found - verification is on-chain + sim only. CAUTION: selector 0x1249c58b is also used by a known PAID contract (0x745d7a3b, 0.000088 BNB there) \u2014 observed mints were value-0, but the shared selector means a paid variant is possible; re-check before minting.",
+   "firstSeen": "2026-11-20 ~10:36 +08, hourly JAGENT wallet scan (4,942 tracked wallets)",
+   "floorPrice": null,
+   "gasEstimateBNB": 4.0837500000000005e-06,
+   "gasEstimateUnits": 81675,
+   "gasNote": "At 0.05 gwei live gas price.",
+   "id": 194,
+   "maxSupply": null,
+   "name": "Agent ID Pioneer Badge",
+   "officialPage": null,
+   "source": "JAGENT scan 2026-11-20 14:36 +08",
+   "status": "VERIFIED_SIM_ONCHAIN_ONLY",
+   "supplyAtSeed": 0,
+   "supplyLiveRecheck": 0,
+   "supplyLiveRecheckAt": "2026-11-20T14:43:56+08:00",
+   "symbol": "AIDPB"
   }
  ],
  "note": "Seed list for AgentRadar. Every entry is evidence-graded, NOT an endorsement. 'VERIFIED_SIM_ONCHAIN_ONLY' means: first-seen tx value was 0 BNB + a read-only mint() replay simulation from Rija's wallet succeeded at value 0 + totalSupply re-read live. NO entry has a verified official project page and NONE has a verified floor price. Do NOT present any entry as official-page-verified. The radar never mints on a user's behalf \u2014 a user mints only in their own wallet, after a fresh preview, at their own risk. Supplies below were re-read live via eth_call totalSupply() on 2026-11-18 ~16:45 +08 and moved since the original scan notes \u2014 re-check before any mint.",
@@ -4196,6 +4218,6 @@
   "LEAD": "Seen in scan logs / unverified. Do NOT list as verified; needs a fresh read-only sim + balanceOf check before promotion.",
   "VERIFIED_SIM_ONCHAIN_ONLY": "Read-only sim passed (value 0), on-chain evidence only, no official page found."
  },
- "updated": "2026-11-20T09:47:56+08:00",
+ "updated": "2026-11-20T14:43:56+08:00",
  "version": 2
 }
